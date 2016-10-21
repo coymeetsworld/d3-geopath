@@ -22,6 +22,12 @@ $(document).ready(function() {
     return -1;
     
   }
+ 
+  function getRandomColorClass() {
+    /* 10 colors to choose from. */ 
+    var rand = Math.floor(Math.random() * (10 - 1 + 1)) + 1;
+    return 'gradient' + rand;
+  }
   
   d3.json('https://raw.githubusercontent.com/FreeCodeCamp/ProjectReferenceData/master/meteorite-strike-data.json', function(error, data) {
     if (error) throw error;
@@ -49,7 +55,8 @@ $(document).ready(function() {
        .enter().append("circle")
        .attr("cx", function(d) { return x(getCoordinates(d.geometry, 'long')); })
        .attr("cy", function(d) { return y(getCoordinates(d.geometry, 'lat')); })        
-       .attr("r", function(d) { return meteorRange(+d.properties.mass) });
+       .attr("r", function(d) { return meteorRange(+d.properties.mass) })
+       .attr("class", function(d) { return getRandomColorClass(); });
 
     /*{
       "type": "Feature",

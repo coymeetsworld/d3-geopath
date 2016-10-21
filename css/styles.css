@@ -16,3 +16,34 @@ h1 {
 	border: 1px solid black;
 	fill: black;
 }
+
+.gradient10 {
+	fill: #ffff00;
+}
+.gradient9 {
+	fill: #ff4500;
+}
+.gradient8 {
+	fill: #ff1493;
+}
+.gradient7 {
+	fill: #ff00ff;
+}
+.gradient6 {
+	fill: #f8be23;
+}
+.gradient5 {
+	fill: #7fff00;
+}
+.gradient4 {
+	fill: #ab1a8a;
+}
+.gradient3 {
+	fill: #00ffff;
+}
+.gradient2 {
+	fill: #00bfff;
+}
+.gradient1 {
+	fill: #00ff00;
+}
