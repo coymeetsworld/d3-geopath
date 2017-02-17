@@ -7,7 +7,7 @@ $(document).ready(function() {
 
 	var zoom = d3.zoom()
 							 .scaleExtent([1, 10])
-							 .translateExtent([width/2, height/2])
+							 .translateExtent([[0,0],[width, height]])
 							 .on("zoom", zoomed);
 
 	var ocean = svg.append('rect')
