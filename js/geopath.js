@@ -27,7 +27,7 @@ $(document).ready(function() {
 									.projection( projection );
 
 
-	d3.json("https://dl.dropboxusercontent.com/u/26748984/web-project-resources/freecodecamp/D3-GeoPath/countries.json", function(error, data) {
+	d3.json("https://github.com/coymeetsworld/d3-geopath/blob/master/js/countries.json", function(error, data) {
 		map.selectAll("path")
 			 .data(data.features)
 			 .enter()
@@ -41,7 +41,7 @@ $(document).ready(function() {
 											.attr( "id", "meteorites" )
 											.attr("transform", "translate(" + 0 + "," + 0 + ")");
 													
-	d3.json('https://dl.dropboxusercontent.com/u/26748984/web-project-resources/freecodecamp/D3-GeoPath/meteorite-strike-data.json', function(error, data) {
+	d3.json("https://raw.githubusercontent.com/FreeCodeCamp/ProjectReferenceData/master/meteorite-strike-data.json", function(error, data) {
 
 		if (error) throw error;
 
@@ -114,7 +114,7 @@ $(document).ready(function() {
 	function getRandomColorClass() {
 		/* 10 colors to choose from. */ 
 		var rand = Math.floor(Math.random() * (10 - 1 + 1)) + 1;
-		return 'gradient' + rand;
+		return "gradient" + rand;
 	}
 
 
