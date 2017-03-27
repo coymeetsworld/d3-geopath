@@ -25,9 +25,8 @@ $(document).ready(function() {
 										 .translate([900,500]);
 	var geoPath = d3.geoPath()
 									.projection( projection );
-
-
-	d3.json("https://github.com/coymeetsworld/d3-geopath/blob/master/js/countries.json", function(error, data) {
+	
+	d3.json("https://coymeetsworld.github.io/d3-geopath/js/countries.json", function(error, data) {
 		map.selectAll("path")
 			 .data(data.features)
 			 .enter()
